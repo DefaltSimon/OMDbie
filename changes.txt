@@ -1,3 +1,7 @@
+1.1.2
+- Removed some prints
+- genres are now a list
+
 1.1.1
 - Additional attribute - trailer
 

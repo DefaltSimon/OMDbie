@@ -25,3 +25,4 @@ while True:
 
     print("{} ({}) - {}".format(resp.title, resp.year, resp.runtime))
     print(resp.trailer)
+    print(type(resp.genre), resp.genre)

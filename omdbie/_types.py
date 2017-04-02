@@ -37,7 +37,7 @@ class Movie:
         "title", "year", "rated", "released", "runtime", "genre", "director", "writer",
         "actors", "plot", "language", "country", "poster", "ratings", "metascore",
         "imdb_rating", "imdb_votes", "imdb_id", "type", "dvd", "box_office", "production",
-        "website", "awards", "total_seasons", "trailer"
+        "website", "awards", "total_seasons", "trailer", "metascore"
     )
 
     def __init__(self, **fields):

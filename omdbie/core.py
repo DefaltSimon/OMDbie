@@ -70,8 +70,6 @@ class CacheManager:
         self.items[imdb_id] = data
         self.titles[data.title] = imdb_id
 
-        print(self.ages, self.items, self.titles, sep="\n")
-
     def get_item(self, imdb_id) -> Union[dict, None]:
         """
         Gets an item. This does not check for age (use check_item).
@@ -152,6 +150,10 @@ class Client:
         # Adds additional info
         # 1. Trailer link
         data["trailer"] = "http://www.imdb.com/title/{}/videogallery".format(data.get("imdbID"))
+
+        if data.get("Genre"):
+            print("modifying")
+            data["Genre"] = [a.strip(" ") for a in data.get("Genre").split(",")]
 
         # Instantiates the objects and saves to cache
         if data.get("Type") == VideoType.series:
