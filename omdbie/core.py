@@ -152,7 +152,6 @@ class Client:
         data["trailer"] = "http://www.imdb.com/title/{}/videogallery".format(data.get("imdbID"))
 
         if data.get("Genre"):
-            print("modifying")
             data["Genre"] = [a.strip(" ") for a in data.get("Genre").split(",")]
 
         # Instantiates the objects and saves to cache
