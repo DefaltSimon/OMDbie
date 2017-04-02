@@ -149,6 +149,10 @@ class Client:
             log.debug("Failed: {}".format(data.get("Error")))
             return None
 
+        # Adds additional info
+        # 1. Trailer link
+        data["trailer"] = "http://www.imdb.com/title/{}/videogallery".format(data.get("imdbID"))
+
         # Instantiates the objects and saves to cache
         if data.get("Type") == VideoType.series:
             entry = Series(**data)

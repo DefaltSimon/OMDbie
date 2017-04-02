@@ -24,3 +24,4 @@ while True:
         continue
 
     print("{} ({}) - {}".format(resp.title, resp.year, resp.runtime))
+    print(resp.trailer)
