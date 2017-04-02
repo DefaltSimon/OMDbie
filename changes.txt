@@ -1,2 +1,7 @@
+1.1
+- Implemented caching
+- New optional dependencies -> install with [fast] (ujson) and [requests] (for requests)
+- Other bugfixes
+
 1.0
 - Initial version

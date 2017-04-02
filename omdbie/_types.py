@@ -17,6 +17,7 @@ class PlotLength:
 class Connectors:
     requests = "requests"
     aiohttp = "aiohttp"
+    urllib = "urllib"
 
 
 class Endpoints:

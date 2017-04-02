@@ -4,6 +4,12 @@ from setuptools import setup
 with open('requirements.txt') as f:
     requirements = f.read().splitlines()
 
+
+extras = {
+    "fast": ["ujson>=1.35"],
+    "requests": ["requests>=2.13.0"]
+}
+
 setup(name='OMDbie',
       version='0.1',
       description='Python API wrapper for OMDb',
@@ -19,4 +25,5 @@ setup(name='OMDbie',
       keywords="defaltsimon omdb api wrapper",
       packages=['omdbie'],
       install_requires=requirements,
+      extras_require=extras,
       zip_safe=False)
