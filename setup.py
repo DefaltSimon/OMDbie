@@ -11,7 +11,7 @@ extras = {
 }
 
 setup(name='OMDbie',
-      version='0.1',
+      version='1.1.2',
       description='Python API wrapper for OMDb',
       classifiers=[
           'Development Status :: 4 - Beta',
